@@ -1,9 +1,11 @@
 {
   "name": "minimal-site-toolkit",
   "version": "1.0.0",
-  "description": "A set of tools, styles and templates to create minimal static sites. Includes 11ty, Nunjucks and Bootstrap.",
+  "description": "A starter toolkit of customized Bootstrap styles and modular Nunjucks templates to create minimal static sites.",
   "main": "index.js",
   "scripts": {
+    "build": "npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --serve"
   },
   "keywords": [
     "minimal",
@@ -11,5 +13,11 @@
     "website"
   ],
   "author": "Jamison Griffith",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }
