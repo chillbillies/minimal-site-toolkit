@@ -16,6 +16,9 @@ Running `npm run watch` is encouraged if actively adding content/developing whic
 
 *Note that two build processes are used. Laravel Mix builds the `assets` directory and 11ty builds the `src` directory. If you are only editing content OR editing assets then there are separate build commands listed in the scripts section of `package.json`. Those commands produce cleaner output.*
 
+## Customization
+Change the values in `config/siteSettings.js` to suite your site. 
+
 ## Deployment 
 After adding content/tweaking assets, run `npm run build` to build your production site ready for deployment. The contents of the `build` directory can be uploaded to whatever hosting the user desires. See [this 11ty resource](https://www.11ty.dev/docs/deployment/) for some example options.
 
