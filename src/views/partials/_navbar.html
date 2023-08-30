@@ -1,16 +1,21 @@
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href={{ '/' | url }}>{{ config.siteName }}</a>
-    <i class="bi-moon"></i>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid horizontal-margin">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar-brand" href={{ '/' | url }}>{{ config.siteName }}</a>
+    <div class="d-flex d-lg-none">
+      <i class="bi-moon icon-lg"></i>
+    </div>
     <div class="collapse navbar-collapse" id="navItems">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
       </ul>
+    </div>
+    <div class="d-none d-lg-flex">
+      <i class="bi-moon icon-lg"></i>
     </div>
   </div>
 </nav>

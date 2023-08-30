@@ -4,12 +4,13 @@
 // TODO: issue with Bootstrap 5.3.1 and this color override fails
 //@import "./_variables.scss";
 //$primary: '#6f42c1';
-$horizontal-padding-desktop: 3em;
+$horizontal-padding-desktop: 2em;
 $horizontal-padding-mobile: 1em;
 
+$navbar-brand-font-size: 1.3rem;
 $nav-link-padding-y:                1.2rem;
-$nav-link-padding-x:                1rem;
-$nav-link-font-size:                1.2rem;
+$nav-link-padding-x:                1.2rem;
+$nav-link-font-size:                1.1rem;
 $nav-link-font-weight:              null;
 // $nav-link-color:                    $link-color;
 // $nav-link-hover-color:              $link-hover-color;
@@ -35,16 +36,26 @@ $nav-link-font-weight:              null;
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/utilities/api";
 
-//@import "bootstrap-icons/font/bootstrap-icons.css";
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.horizontal-margin {
     margin: 0 $horizontal-padding-mobile;
 
     @include media-breakpoint-up(lg) {
         margin: 0 $horizontal-padding-desktop;
     }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.icon-lg {
+    font-size: 1.5em;
 }
