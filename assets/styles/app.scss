@@ -3,14 +3,14 @@
 // Default variable overrides here
 // TODO: issue with Bootstrap 5.3.1 and this color override fails
 //@import "./_variables.scss";
-//$primary: '#fff';
+//$primary: '#6f42c1';
 $horizontal-padding-desktop: 3em;
 $horizontal-padding-mobile: 1em;
 
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 
-// Map overrides
+// Map overrides here
 
 @import "bootstrap/scss/maps";
 
@@ -23,6 +23,11 @@ $horizontal-padding-mobile: 1em;
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/navbar";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/transitions";
+
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities/api";
 
 .footer {
     display: flex;
