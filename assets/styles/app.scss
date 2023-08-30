@@ -7,6 +7,12 @@
 $horizontal-padding-desktop: 3em;
 $horizontal-padding-mobile: 1em;
 
+$nav-link-padding-y:                1.2rem;
+$nav-link-padding-x:                1rem;
+$nav-link-font-size:                1.2rem;
+$nav-link-font-weight:              null;
+// $nav-link-color:                    $link-color;
+// $nav-link-hover-color:              $link-hover-color;
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 
@@ -28,6 +34,8 @@ $horizontal-padding-mobile: 1em;
 
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/utilities/api";
+
+//@import "bootstrap-icons/font/bootstrap-icons.css";
 
 .footer {
     display: flex;

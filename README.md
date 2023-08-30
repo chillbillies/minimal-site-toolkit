@@ -22,5 +22,8 @@ Change the values in `config/siteSettings.js` to suite your site.
 ## Deployment 
 After adding content/tweaking assets, run `npm run build` to build your production site ready for deployment. The contents of the `build` directory can be uploaded to whatever hosting the user desires. See [this 11ty resource](https://www.11ty.dev/docs/deployment/) for some example options.
 
+## TODO
+[Dark mode](https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript)
+[Icons](https://icons.getbootstrap.com/#usage)
 ## More Help
 [Site building functionality](https://www.11ty.dev/docs/usage/) is powered by 11ty, the [main templating language](https://mozilla.github.io/nunjucks/) is Nunjucks and the [styling foundation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) is Bootstrap.

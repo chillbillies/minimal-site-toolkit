@@ -11,5 +11,13 @@ const mix = require('laravel-mix');
  | and cleaner bundled styles.
  |
  */
-mix.js('assets/scripts/app.js', 'build/js')
+// mix.setResourceRoot('build');
+// mix.options({
+//     fileLoaderDirs: {
+//         fonts: 'fonts'
+//     }
+// });
+mix.copyDirectory('node_modules/bootstrap-icons/font/bootstrap-icons.css', 'build/icons');
+mix.copyDirectory('node_modules/bootstrap-icons/font/fonts', 'build/icons/fonts');
+mix.ts('assets/scripts/app.ts', 'build/js')
     .sass('assets/styles/app.scss', 'build/css')
